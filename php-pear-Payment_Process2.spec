@@ -17,6 +17,7 @@ URL:		http://pear.php.net/package/Payment_Process2/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
+Obsoletes:	php-pear-Payment_Process2-tests
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -29,20 +30,6 @@ In PEAR status of this package is: %{_status}.
 #...
 #
 #Ta klasa ma w PEAR status: %{_status}.
-
-%package tests
-Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
-Group:		Development/Languages/PHP
-AutoReq:	no
-Requires:	%{name} = %{version}-%{release}
-AutoProv:	no
-
-%description tests
-Tests for PEAR::%{_pearname}.
-
-%description tests -l pl.UTF-8
-Testy dla PEAR::%{_pearname}.
 
 %prep
 %pear_package_setup
@@ -61,7 +48,3 @@ rm -rf $RPM_BUILD_ROOT
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/Payment/Process2.php
 %{php_pear_dir}/Payment/Process2
-
-%files tests
-%defattr(644,root,root,755)
-%{php_pear_dir}/tests/Payment_Process2
