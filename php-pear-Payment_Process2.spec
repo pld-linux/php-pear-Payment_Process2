@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - A PHP5 Payment process API
 #Summary(pl.UTF-8):	%{_pearname} - 
 Name:		php-pear-%{_pearname}
-Version:	0.1.0
+Version:	0.3.1
 Release:	1
 License:	BSD Style
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	75eb004a512eb2301cfe63e9ec0a51e4
+# Source0-md5:	6dacc74ee670d5608509472ddf89af7e
 URL:		http://pear.php.net/package/Payment_Process2/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -48,3 +48,4 @@ rm -rf $RPM_BUILD_ROOT
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/Payment/Process2.php
 %{php_pear_dir}/Payment/Process2
+%{php_pear_dir}/data/Payment_Process2
