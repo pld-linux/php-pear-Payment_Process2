@@ -1,0 +1,11 @@
+--- Payment_Process2-0.3.1/usr/share/pear/Payment/Process2/Offline.php~	2019-04-08 07:43:10.941096970 +0200
++++ Payment_Process2-0.3.1/usr/share/pear/Payment/Process2/Offline.php	2019-04-08 07:43:40.302627893 +0200
+@@ -42,7 +42,7 @@
+  */
+ 
+ 
+-require_once 'Validate/CreditCard.php';
++require_once 'Validate/Finance/CreditCard.php';
+ 
+ /**
+ * Payment_Process2_offline
