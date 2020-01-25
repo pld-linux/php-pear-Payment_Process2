@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 %define		_class		Payment
 %define		_subclass	Process2
 %define		_status		alpha
